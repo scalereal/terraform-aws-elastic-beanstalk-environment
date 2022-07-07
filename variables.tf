@@ -1,3 +1,14 @@
+variable "aws_profile" {
+  type        = string
+  description = "The AWS Profile"
+}
+
+variable "aws_region" {
+  type        = string
+  description = "AWS Region for develop infra"
+}
+
+
 variable "service_name" {
   type        = string
   description = ""
@@ -8,9 +19,9 @@ variable "description" {
   description = ""
 }
 
-variable "env" {
+variable "environment" {
   type        = string
-  description = ""
+  description = "Environment Name like Prod, Testing"
 }
 
 variable "vpc_id" {
